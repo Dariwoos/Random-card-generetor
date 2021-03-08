@@ -1,16 +1,16 @@
 let numberArray = ["1","2","3","4","5","6","7","8","9","10","J","k"];
 let arrayIcon = ["\u2665","\u2666","\u2663","\u2660"];
 
-function random  (myArray){
-    let randomCard = Math.floor(Math.random() * (myArray.length));
+function randoms  (array){
+    let randomCard = Math.floor(Math.random() * (array.length));
     return randomCard ;
 
 }
-let numbersArray = numberArray[random(numberArray)];
-let arrayIcons = arrayIcon[random(arrayIcon)];
+let numbersArray = numberArray[randoms(numberArray)];
+let arrayIcons = arrayIcon[randoms(arrayIcon)];
 
 
-if(arrayIcon=="\u2665" || arrayIcon=="\u2666" ){
+if(arrayIcons=="\u2665" || arrayIcons=="\u2666" ){
     document.querySelector("#leftIcon").style.color="red";
     document.querySelector("#righIcon").style.color="red";
     document.querySelector("#num").style.color="red";
@@ -21,6 +21,6 @@ if(arrayIcon=="\u2665" || arrayIcon=="\u2666" ){
 
 }
 
-document.getElementById("num").innerHTML = numberArray;
+document.getElementById("num").innerHTML = numbersArray;
 document.getElementById("leftIcon",).innerHTML = arrayIcons;
 document.getElementById("righIcon",).innerHTML = arrayIcons;
