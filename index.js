@@ -3,7 +3,7 @@ let arrayIcon = ["\u2665","\u2666","\u2663","\u2660"];
 
 function random  (myArray){
     let randomCard = Math.floor(Math.random() * (myArray.length));
-    return random;
+    return randomCard ;
 
 }
 let numbersArray = numberArray[random(numberArray)];
